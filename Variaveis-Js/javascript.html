@@ -21,7 +21,7 @@
     
     //const n1 = prompt("Digite número 1:");
     //const n2 = prompt("Digite número 2:");
-    const n1 = 10
+    /*const n1 = 10
     const n2 = 20
     const aprovado = true
     const minimo = 9
@@ -45,7 +45,31 @@
     console.log(aprovado)
     console.log(!aprovado) //negação
     console.log(n2 >= 7 && n2 >= minimo) //conjunção
-     console.log(n2 >= 7 || n2 >= minimo) // ou
+     console.log(n2 >= 7 || n2 >= minimo) // ou*/
+
+     var a=10;
+     var b= 20;
+     var aux = 10;
+     var total=0;
+
+     a = b + aux;
+     b = a + aux;
+     aux = a + b;
+     total = aux - (aux - a - b)
+     if (aux == total) {
+        if( b > a) {
+            a = b - a;
+            b = aux - b - a;
+            aux =  total - 2*b - 2*a;
+        }
+        else {
+            a = a - b;
+            b = aux - b;
+            aux = total - a;
+
+        }
+     }
+     console.log(a, b, aux);
     </script>
 </body>
 </html>
