@@ -13,11 +13,11 @@
         N2: <input type="text" id="n2"> <br>
 
         <input type="button" value="Somar" onclick="somar()">
-        <input type="button" value="Subtrair" onclick="">
-        <input type="button" value="Multiplicar" onclick="">
-        <input type="button" value="Dividir" onclick="">
+        <input type="button" value="Subtrair" onclick="subtrair()">
+        <input type="button" value="Multiplicar" onclick="multiplicar()">
+        <input type="button" value="Dividir" onclick="dividir()">
 
-        <h1 id="resultado">A soma dos números é:</h1>
+        <h1 id="resultado">O resultado é:</h1>
 
     </form>
   
@@ -27,8 +27,34 @@
             const n1 = Number(document.getElementById('n1').value);
             const n2 = Number(document.getElementById('n2').value);
 
+
             const soma = n1 + n2
             document.getElementById('resultado').innerHTML = 'A soma dos números é: ' + soma;
+        }
+
+        function subtrair () {
+          const n1 = Number(document.getElementById('n1').value);
+            const n2 = Number(document.getElementById('n2').value);
+
+            const subtracao = n1 - n2
+            document.getElementById('resultado').innerHTML = 'A subtração dos números é: ' + subtracao;
+
+        }
+
+        function multiplicar () {
+             const n1 = Number(document.getElementById('n1').value);
+            const n2 = Number(document.getElementById('n2').value);
+
+            const multiplicacao = n1 * n2
+            document.getElementById('resultado').innerHTML = 'A multiplicação dos números é: ' + multiplicacao;
+        }
+
+        function dividir () {
+             const n1 = Number(document.getElementById('n1').value);
+            const n2 = Number(document.getElementById('n2').value);
+
+            const divisao = n1 / n2
+            document.getElementById('resultado').innerHTML = 'A divisão dos números é: ' + divisao;
         }
     </script>
 </body>
