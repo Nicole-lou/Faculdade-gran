@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+
+
+    <script>
+        const carros = ['Fiat', 'Ford', 'GM', 'VW']
+        carros.push('Honda') // Adiciona um elemento no final do array
+        carros.unshift('Hyundai') // Adiciona um elemento no início do array
+        carros.splice(2, 0, 'Renault') // Adiciona um elemento na posição 2 (índice 2) sem remover nenhum elemento
+        console.table(carros) // Exibe o array atualizado no console
+        carros.sort()
+        console.table(carros) // Exibe o array ordenado no console
+    </script>
+</body>
+</html>
