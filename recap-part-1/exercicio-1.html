@@ -18,7 +18,7 @@
     const idade = anoVotacao - anoNascimento;
 
     // Processamento
-        if(idade < 16) {
+       /* if(idade < 16) {
             console.log('Você não pode votar. Você tem ' + idade + ' anos.');
         } else if(idade >= 16 && idade < 18) {
             console.log('Você pode ou não votar, é facultativo. Você tem ' + idade + ' anos.');
@@ -26,7 +26,16 @@
             console.log('Você é obrigado a votar. Você tem ' + idade + ' anos.');
         } else if (idade >= 65) {
             console.log('Você pode ou não votar, é facultativo. Você tem ' + idade + ' anos.');
-        } 
+        } */
+         // Outra forma de processamento
+        if (idade < 16) {
+            console.log('Você não pode votar. Você tem ' + idade + ' anos.');
+        } else if (idade >= 18 && idade < 65) {
+            console.log(' Vocé é obrigado a votar. Vocé tem ' + idade + ' anos.');
+        } else {
+            console.log('Você pode ou não votar, é facultativo. Você tem ' + idade + ' anos.');
+        }
+
          
 
     </script>
