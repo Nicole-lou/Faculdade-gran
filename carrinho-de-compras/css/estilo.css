@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+nav.navbar, .navbar {
+    background-color: #b1a9a9 !important;
+    color: #000000 !important;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+
+
+nav.navbar a,
+nav.navbar .nav-link,
+nav.navbar .navbar-brand {
+    color: #000000 !important;
+}
+
+nav.navbar .nav-link:hover {
+    color: #1d1919 !important;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-weight: 200;
+   color: #000000;
+}
+
+.bi-cart-check {
+    margin: 5px;
+}
+
+.texto {
+    font-weight: bold;
+    color: #000000;
+    font-size: 15px;
+}
+
+.produto-item {
+    font-weight: bold;
+    color:  rgb(194, 9, 9);
+}
+
+.preco {
+    font-weight: bold;
+    
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    padding: 6px;
+    background-color: #524f4f;
+    color: #fff;
+    font-weight: bolder;
+}
